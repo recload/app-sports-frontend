@@ -35,3 +35,18 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+/* Bootstrap General Modify */
+
+.btn-primary {
+    background: linear-gradient(to right, #1574bb, #642f92) !important;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: .5rem;
+    width: 90%;
+}
+
+.btn {
+    background-color: transparent !important;
+}

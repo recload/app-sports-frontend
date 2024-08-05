@@ -1,20 +1,36 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-toolbar class="custom-toolbar">
+    <ion-buttons slot="start">
+      <ion-button>
+        <div class="user-info d-flex align-items-center">
+          <img src="https://avatars.githubusercontent.com/u/99782517?v=4" alt="Profile Image" class="profile-img">
+          <div class="d-flex flex-column align-items-start user-details">
+            <ion-label class="user-name">GEORGE UAMIRIM</ion-label>
+            <span class="user-id">202106</span>
+          </div>
+        </div>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button autoHide="false">
+        <i class="bi bi-list"></i>
+      </ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
+  <div class="custom-img-toolbar">
+    <div class="img-toolbar d-flex align-items-center">
+      <ion-title size="large" class="title text-center">SPORTS<br>online<br>LOGO</ion-title>
+    </div>
+  </div>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Teste App</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="container" class="bg-white w-100 h-100">
+    <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 w-100 h-100 pb-3">
+      <a href="" class="btn-primary-img soccer"><span>FUTEBOL</span></a>
+      <a href="" class="btn-primary-img basket"><span>BASQUETE</span></a>
+      <a href="" class="btn-primary-img volley"><span>VÔLEI</span></a>
+      <a href="" class="btn-primary-img futsal"><span>FUTSAL</span></a>
+    </div>
   </div>
 </ion-content>
